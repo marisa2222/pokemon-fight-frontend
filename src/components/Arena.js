@@ -112,6 +112,7 @@ const Arena = ({fightPokemon}) => {
 
     //END GAME AND SAVE DATA IN BACKEND
     const safeDataToBackend = (game)=>{
+        console.log(game);
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
     
@@ -130,7 +131,7 @@ const Arena = ({fightPokemon}) => {
         redirect: 'follow'
     };
     
-    fetch("https://pokemon-fightclub.herokuapp.com/users/game", requestOptions)
+    fetch("http://localhost:3000/users/game", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
