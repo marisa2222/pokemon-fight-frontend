@@ -1,55 +1,96 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBMask, } from "mdbreact";
+import { MDBContainer, MDBFooter } from "mdbreact";
+import "../styles/navbar.css";
 
 const FooterPage = () => {
   return (
-    
-    <MDBFooter  className="font-small" style={{
-            backgroundImage:
-            `url(${process.env.PUBLIC_URL + '/img/pokemon-screensaver.jpg'})`,
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat',
-    }}>
+    <MDBFooter className="font-small">
+      <MDBContainer>
+        <div className="text-footer">
+          <div className="container text-center text-md-start mt-5">
+            <div className="row mt-3 footertop">
+              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 className="text-uppercase mb-4">
+                  <strong>Pokemon Universe</strong>
+                </h6>
+                <p>Enjoy your life with your favorite Pokemon!</p>
+              </div>
 
-    <MDBMask overlay="blue-light" >
-      <MDBContainer fluid className="text-center text-md-left pt-5" >
-        
-        <MDBRow >
-          <MDBCol >
-            <h4>
-              This is a project which evolved during a WBS Coding School Course, with group 2.
-            </h4>
- 
-          </MDBCol>
+              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 className="text-uppercase mb-4">
+                  <strong>Go to</strong>
+                </h6>
+                <p>
+                  <a href="/LeaderBoard" className="text-reset">
+                    LeaderBoard
+                  </a>
+                </p>
+                <p>
+                  <a href="/history" className="text-reset">
+                    History
+                  </a>
+                </p>
+                <p>
+                  <a href="/contact" className="text-reset">
+                    Contact
+                  </a>
+                </p>
+              </div>
 
-          <MDBCol md="6" >
-            <MDBContainer>
-            <MDBRow> 
-              <MDBCol md="1"></MDBCol>
-              <MDBCol md="9"><h4 className="text-center">Coded with love by</h4>
-              </MDBCol>
-            </MDBRow>
-            <MDBRow className="d-flex justify-content-center flex-shrink-1">
-              <MDBCol lg="1" md="0"></MDBCol>
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 className="text-uppercase mb-4">
+                  <strong>Useful links</strong>
+                </h6>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Subscribe
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Settings
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Orders
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" className="text-reset">
+                    Help
+                  </a>
+                </p>
+              </div>
 
-            
-              <MDBCol md="2"></MDBCol>
-            </MDBRow>
-            </MDBContainer>
-              
-          </MDBCol>
-        </MDBRow>
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-left">
+                <h6 className="text-uppercase mb-4">
+                  <strong>Contact</strong>
+                </h6>
+                <p>
+                  <i className="fas fa-home me-3"></i> Berlin 12047, Germany
+                </p>
+                <p>
+                  <i className="fas fa-envelope me-3"></i>
+                  info@pokemon.com
+                </p>
+                <p>
+                  <i className="fas fa-phone me-3"></i> + 49 234 567 88
+                </p>
+                <p>
+                  <i className="fas fa-print me-3"></i> + 49 234 567 89
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="text-center p-4 copyright text-footer">
+          © 2021 Copyright: This project created by Group 2 during the WBS
+          coding bootcamp.
+        </div>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3">
- 
-      </div>
-    </MDBMask> 
     </MDBFooter>
-  
   );
-}
+};
 
 export default FooterPage;
-
-

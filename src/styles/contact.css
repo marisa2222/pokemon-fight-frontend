@@ -1,0 +1,10 @@
+.cardBodyContact {
+    color: #476258;
+}
+
+body {
+    background-color: #B8E1D1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f8f8ff 10px ), repeating-linear-gradient( #e4f6ef, #B8E1D1 );
+    margin-top: -20vh;
+    margin-bottom: -4vh;
+}

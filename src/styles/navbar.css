@@ -1,0 +1,35 @@
+/* NavBar */
+.navbarcolors {
+    background-color: #B8E1D1;
+    color: #cf543b;
+}
+
+.FightClub {
+    color: #cf543b;
+    font-weight: 500;
+}
+/* NavBar */
+
+/* Footer */
+.footertop {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.font-small {
+    background-color: #B8E1D1;
+    margin-top: -6vh;
+}
+
+.text-footer {
+    color: #476258;
+    font-weight: 300; 
+    margin-bottom:-7vh
+}
+/* Footer */
+
+
+
+
+
+
