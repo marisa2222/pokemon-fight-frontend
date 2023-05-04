@@ -45,7 +45,7 @@ class NavBar extends React.Component {
             </MDBNavbar>
 
           <MDBView src={process.env.PUBLIC_URL + '/img/pokemon-screensaver.jpg'} >
-            <MDBMask overlay="blue-light" className="flex-center flex-column text-white text-center" >
+            <MDBMask overlay="green-light" className="flex-center flex-column text-white text-center" >
             <img src={process.env.PUBLIC_URL + '/img/FightClub.png'} style={{
                 width:600,
             }}/>
